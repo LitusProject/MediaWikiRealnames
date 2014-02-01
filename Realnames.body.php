@@ -327,7 +327,7 @@ class ExtRealnames {
    *    we tend to just strip the User: and leave the username, but we only modify the
    *    first word so some weird style might screw it up (2011-09-17, ofb)
    */
-  protected static function lookForBare($text,$pattern=false) {
+  public static function lookForBare($text,$pattern=false) {
     if (empty($pattern)) {
       // considered doing [^<]+ here to catch names with spaces or underscores,
       // which works for most titles but is not universal
@@ -348,7 +348,7 @@ class ExtRealnames {
    * @return \string with realnames replaced in
    * @since 2011-09-16, 0.1
    */
-  protected static function lookForLinks($text,$pattern=false) {
+  public static function lookForLinks($text,$pattern=false) {
     if (empty($pattern)) {
       $pattern = '/(<a\b[^">]+href="[^">]+'.self::getNamespacePrefixes().'([^"\\?\\&>]+)[^>]+>)'.self::getNamespacePrefixes().'?([^>]+)(<\\/a>)/';
     }

@@ -9,6 +9,11 @@ I always love hearing from my users,
 
 any comments, issues, suggestions or complaints.
 
+== HEAD (2014-02-01) ==
+
+small changes:
+* exposed lookForBare and lookForLinks to the outer world, allows other extensions to use it
+
 == 0.2 (2011-09-22) ==
 
 features:
